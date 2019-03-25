@@ -24,8 +24,10 @@
         var context = canvas.getContext("2d");
         var img = document.createElement("img");
         img.src = 'mseImage.png';
-        canvas.width = img.width;
-        canvas.height = img.height;
+        img2 = document.createElement("img");
+        img2.src = 'mseImage2.png';
+        canvas.width = img2.width;
+        canvas.height = img2.height ;
 
         context.drawImage(img, 0, 0);
         var imageData = context.getImageData(0, 0, img.width, img.height);
